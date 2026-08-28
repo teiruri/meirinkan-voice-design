@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=1440">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <title>インタビュー一覧ページ｜明倫館デザイン案</title>
 
@@ -16,8 +16,11 @@
     .chip { display: inline-flex; align-items: center; gap: 5px; background: #ffffff; border-radius: 999px; font-size: 11px; padding: 2px 10px; }
   </style>
 
+<style>html,body{overflow-x:hidden;}</style>
+<script>function __fit(){var w=document.documentElement.clientWidth;var s=Math.min(1,w/1440);var el=document.getElementById('fit');if(el){el.style.zoom=s;}}window.addEventListener('resize',__fit);window.addEventListener('DOMContentLoaded',__fit);</script>
 </head>
 <body>
+<div id="fit" style="width:1440px;">
 
 
 <div style="display: flex; width: 1440px; min-height: 1500px; background: #ffffff; align-items: stretch;">
@@ -77,7 +80,7 @@
       <div style="max-width: 1000px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px;">
 
         <a href="interview.html" style="display: block; background: #ffffff;">
-          <img src="teacher_girl.jpg" style="width: 100%; height: 170px; object-fit: cover; display: block;">
+          <img src="stock_main.jpg" style="width: 100%; height: 170px; object-fit: cover; display: block;">
           <div style="padding: 16px 18px 18px;">
             <div style="font-size: 10.5px; color: #c2597a; letter-spacing: 0.1em; margin-bottom: 5px;">vol.01｜卒業生×お母さま　2026.9.15</div>
             <div class="mincho" style="font-size: 15.5px; line-height: 1.7; color: #2c3242; margin-bottom: 8px;">「学び続ける癖」は、明倫館でついた。</div>
@@ -134,5 +137,6 @@
   </div>
 </div>
 
+</div>
 </body>
 </html>
