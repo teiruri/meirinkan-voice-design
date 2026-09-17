@@ -9,15 +9,20 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;600;700&amp;family=Zen+Kaku+Gothic+New:wght@400;500;700&amp;family=Caveat:wght@600&amp;display=swap">
   <style>
     body { margin: 0; font-family: 'Zen Kaku Gothic New', 'Yu Gothic', 'Hiragino Kaku Gothic ProN', sans-serif; color: #3a3a3a; background: #ffffff; }
-    a { color: #a8894a; } a:hover { color: #8a6d33; }
+    a { color: inherit; text-decoration: none; } a:hover { opacity: 0.85; }
     .mincho { font-family: 'Shippori Mincho', 'Yu Mincho', serif; }
     .script { font-family: 'Caveat', cursive; color: #a8894a; }
-    .navitem { border: 1px solid #1c3d8f; color: #1c3d8f; font-size: 12px; text-align: center; padding: 10px 4px; background: #ffffff; letter-spacing: 0.05em; }
-    .ph { background: linear-gradient(135deg, #cfe0ea, #a9c2d3); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; color: #55707f; }
-    .stars { display: flex; gap: 2px; align-items: center; }
-    .rcard { background: #f7f6f0; padding: 22px 26px; display: flex; flex-direction: column; gap: 12px; }
-    .rmeta { font-size: 12px; color: #8a8778; display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
-    .rtag { background: #e4eef7; color: #3d6ca8; font-size: 11px; padding: 2px 10px; border-radius: 999px; }
+    .navitem { display: block; border: 1px solid #1c3d8f; color: #1c3d8f; font-size: 12px; text-align: center; padding: 10px 4px; background: #ffffff; letter-spacing: 0.05em; }
+    .vcard { background: #f7f6f0; padding: 24px 28px; display: flex; flex-direction: column; gap: 12px; }
+    .vhead { font-family: 'Shippori Mincho', 'Yu Mincho', serif; font-size: 17px; font-weight: 600; color: #2c3242; line-height: 1.7; }
+    .vhead::before { content: "“"; font-size: 26px; color: #a8894a; margin-right: 4px; line-height: 1; }
+    .vbody { font-size: 13px; line-height: 1.95; color: #565244; margin: 0; }
+    .vmeta { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-top: auto; }
+    .vtag { background: #e4eef7; color: #3d6ca8; font-size: 11px; padding: 3px 12px; border-radius: 999px; }
+    .vwho { font-size: 11.5px; color: #8a8778; }
+    .tip { background: #ffffff; border: 1px solid #e2ddc9; border-radius: 14px; padding: 16px 20px; position: relative; }
+    .tip::after { content: ""; position: absolute; left: 28px; bottom: -9px; width: 0; height: 0; border-left: 9px solid transparent; border-right: 9px solid transparent; border-top: 9px solid #ffffff; }
+    .tip-text { font-family: 'Shippori Mincho', 'Yu Mincho', serif; font-size: 14.5px; color: #2c3242; line-height: 1.8; }
   </style>
 
 <style>html,body{overflow-x:hidden;}</style>
@@ -27,7 +32,7 @@
 <div id="fit" style="width:1440px;">
 
 
-<div style="display: flex; width: 1440px; min-height: 1840px; background: #ffffff; align-items: stretch;">
+<div style="display: flex; width: 1440px; min-height: 2340px; background: #ffffff; align-items: stretch;">
 
   <!-- 左固定ナビ（現行サイト共通） -->
   <div style="flex: 0 0 190px; background: #ffffff; border-right: 1px solid #e3e6ee; padding: 14px 12px 24px; display: flex; flex-direction: column; gap: 8px;">
@@ -40,14 +45,14 @@
     <div class="navitem">明倫館のここが良い！</div>
     <div class="navitem">明倫館に決めた理由</div>
     <div class="navitem">合格者の声</div>
-    <a class="navitem" href="interview-list.html" style="display: block; text-decoration: none; background: #fdf0f5; border-color: #d84f82; color: #1c3d8f; position: relative; font-weight: 700;">卒業生インタビュー<div style="position: absolute; top: -7px; right: -5px; background: #d84f82; color: #ffffff; font-size: 9px; padding: 1px 6px; border-radius: 999px; letter-spacing: 0.1em;">NEW</div></a>
-    <a class="navitem" href="kuchikomi.html" style="display: block; text-decoration: none; background: #fdf0f5; border-color: #d84f82; color: #1c3d8f; position: relative; font-weight: 700;">卒業生の口コミ<div style="position: absolute; top: -7px; right: -5px; background: #d84f82; color: #ffffff; font-size: 9px; padding: 1px 6px; border-radius: 999px; letter-spacing: 0.1em;">NEW</div></a>
+    <a class="navitem" href="interview-list.html" style="background: #fdf0f5; border-color: #d84f82; color: #1c3d8f; position: relative; font-weight: 700;">卒業生インタビュー<div style="position: absolute; top: -7px; right: -5px; background: #d84f82; color: #ffffff; font-size: 9px; padding: 1px 6px; border-radius: 999px; letter-spacing: 0.1em;">NEW</div></a>
+    <a class="navitem" href="kuchikomi.html" style="background: #fdf0f5; border-color: #d84f82; color: #1c3d8f; position: relative; font-weight: 700;">卒業生の口コミ<div style="position: absolute; top: -7px; right: -5px; background: #d84f82; color: #ffffff; font-size: 9px; padding: 1px 6px; border-radius: 999px; letter-spacing: 0.1em;">NEW</div></a>
     <div class="navitem">塾長のごあいさつ</div>
     <div class="navitem">合格実績</div>
     <div class="navitem">Q&amp;A</div>
     <div class="navitem">塾の概要</div>
     <div style="margin-top: 14px; border: 1px solid #1c3d8f;">
-      <div class="ph" style="height: 64px;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M4 8h3l2-2h6l2 2h3v11H4z"></path><circle cx="12" cy="13" r="3.5"></circle></svg></div>
+      <img src="classroom_left.jpg" style="width: 100%; height: 64px; object-fit: cover; display: block;">
       <div class="mincho" style="text-align: center; color: #1c3d8f; font-size: 15px; letter-spacing: 0.2em; padding: 6px 0 2px;">体験授業</div>
       <div style="text-align: center; font-size: 10px; color: #ffffff; background: #d84f82; margin: 4px 8px 8px; padding: 2px 0;">無料・随時受付中</div>
     </div>
@@ -63,139 +68,104 @@
   <div style="flex: 1 1 auto; background: #aee3f5; padding: 0 0 60px;">
 
     <!-- 見出し -->
-    <div style="text-align: center; padding: 56px 70px 30px;">
-      <div class="script" style="font-size: 30px;">Graduates' Voice</div>
+    <div style="text-align: center; padding: 56px 70px 10px;">
+      <div class="script" style="font-size: 30px;">Real Voices</div>
       <h1 class="mincho" style="font-size: 34px; font-weight: 600; color: #a8894a; letter-spacing: 0.14em; margin: 6px 0 14px;">卒業生の口コミ</h1>
-      <p style="font-size: 13px; color: #3f5566; line-height: 1.9; margin: 0 0 18px;">当塾が毎年3月に実施している卒業生アンケートより、<br>掲載に同意をいただいた回答をご紹介しています。</p>
-      <img src="kids_group.png" style="height: 170px; width: auto; display: inline-block;">
+      <p style="font-size: 13px; color: #3f5566; line-height: 1.9; margin: 0;">当塾が卒業時に実施している保護者アンケートより、いただいた言葉を<b>そのまま</b>掲載しています。<br>2026年2月実施・31期生（2026年卒）保護者　回答9件</p>
     </div>
 
-    <!-- サマリー -->
-    <div style="padding: 0 70px 34px;">
-      <div style="max-width: 980px; margin: 0 auto; background: #f7f6f0; display: flex; align-items: stretch;">
-        <div style="flex: 0 0 300px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; padding: 30px 20px; border-right: 1px solid #e2ddc9;">
-          <div style="font-size: 12px; color: #8a8778; letter-spacing: 0.12em;">総合満足度</div>
-          <div class="mincho" style="font-size: 54px; color: #a8894a; line-height: 1;">4.8</div>
-          <div class="stars">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="#e0a83c"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"></path></svg>
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="#e0a83c"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"></path></svg>
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="#e0a83c"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"></path></svg>
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="#e0a83c"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"></path></svg>
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="#d8d2c0"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"></path></svg>
-          </div>
-          <div style="font-size: 12px; color: #8a8778;">アンケート回答 42件</div>
-        </div>
-        <div style="flex: 1 1 auto; padding: 26px 34px; display: flex; flex-direction: column; justify-content: center; gap: 12px;">
-          <div style="display: flex; align-items: center; gap: 14px;"><div style="flex: 0 0 170px; font-size: 13px;">授業のわかりやすさ</div><div style="flex: 1 1 auto; height: 8px; background: #e6e1cf; border-radius: 999px;"><div style="width: 96%; height: 8px; background: #e0a83c; border-radius: 999px;"></div></div><div class="mincho" style="flex: 0 0 36px; color: #a8894a; font-size: 15px; text-align: right;">4.9</div></div>
-          <div style="display: flex; align-items: center; gap: 14px;"><div style="flex: 0 0 170px; font-size: 13px;">先生との距離の近さ</div><div style="flex: 1 1 auto; height: 8px; background: #e6e1cf; border-radius: 999px;"><div style="width: 96%; height: 8px; background: #e0a83c; border-radius: 999px;"></div></div><div class="mincho" style="flex: 0 0 36px; color: #a8894a; font-size: 15px; text-align: right;">4.9</div></div>
-          <div style="display: flex; align-items: center; gap: 14px;"><div style="flex: 0 0 170px; font-size: 13px;">保護者へのサポート</div><div style="flex: 1 1 auto; height: 8px; background: #e6e1cf; border-radius: 999px;"><div style="width: 94%; height: 8px; background: #e0a83c; border-radius: 999px;"></div></div><div class="mincho" style="flex: 0 0 36px; color: #a8894a; font-size: 15px; text-align: right;">4.7</div></div>
-          <div style="display: flex; align-items: center; gap: 14px;"><div style="flex: 0 0 170px; font-size: 13px;">また通いたいと思うか</div><div style="flex: 1 1 auto; height: 8px; background: #e6e1cf; border-radius: 999px;"><div style="width: 96%; height: 8px; background: #e0a83c; border-radius: 999px;"></div></div><div class="mincho" style="flex: 0 0 36px; color: #a8894a; font-size: 15px; text-align: right;">4.8</div></div>
-        </div>
-        <div style="flex: 0 0 auto; display: flex; align-items: flex-end; padding: 0 18px 0 0;">
-          <img src="kids_guts.png" style="height: 150px; width: auto; display: block;">
-        </div>
+    <!-- ハイライト引用（とっかかり） -->
+    <div style="padding: 26px 70px 30px;">
+      <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+        <div class="mincho" style="font-size: 25px; font-weight: 600; color: #2c3242; line-height: 2; text-wrap: balance;"><span style="color: #a8894a; font-size: 40px; vertical-align: -8px;">“</span>受験直前の追い込みの時期ですら、笑顔で塾に向かう姿を見て、<br>「この塾に出会えて本当に良かった」と心から感じました。<span style="color: #a8894a; font-size: 40px; vertical-align: -14px;">”</span></div>
+        <div style="font-size: 12px; color: #3f5566; margin-top: 10px;">――31期生・保護者（小5冬に転塾）</div>
       </div>
     </div>
 
-    <!-- 年度フィルタ -->
-    <div style="padding: 0 70px 24px;">
-      <div style="max-width: 980px; margin: 0 auto; display: flex; gap: 10px;">
-        <div style="background: #1c3d8f; color: #ffffff; font-size: 12.5px; padding: 7px 22px; border-radius: 999px;">すべて</div>
-        <div style="background: #ffffff; color: #1c3d8f; border: 1px solid #1c3d8f; font-size: 12.5px; padding: 7px 22px; border-radius: 999px;">2026年卒</div>
-        <div style="background: #ffffff; color: #1c3d8f; border: 1px solid #1c3d8f; font-size: 12.5px; padding: 7px 22px; border-radius: 999px;">2025年卒</div>
-        <div style="background: #ffffff; color: #1c3d8f; border: 1px solid #1c3d8f; font-size: 12.5px; padding: 7px 22px; border-radius: 999px;">2024年卒</div>
+    <!-- テーマの入口 -->
+    <div style="padding: 0 70px 26px;">
+      <div style="max-width: 980px; margin: 0 auto; display: flex; gap: 10px; flex-wrap: wrap; justify-content: center;">
+        <div style="background: #ffffff; color: #1c3d8f; border: 1px solid #1c3d8f; font-size: 12.5px; padding: 7px 20px; border-radius: 999px;">＃先生との距離</div>
+        <div style="background: #ffffff; color: #1c3d8f; border: 1px solid #1c3d8f; font-size: 12.5px; padding: 7px 20px; border-radius: 999px;">＃過去問対策</div>
+        <div style="background: #ffffff; color: #1c3d8f; border: 1px solid #1c3d8f; font-size: 12.5px; padding: 7px 20px; border-radius: 999px;">＃少人数制</div>
+        <div style="background: #ffffff; color: #1c3d8f; border: 1px solid #1c3d8f; font-size: 12.5px; padding: 7px 20px; border-radius: 999px;">＃転塾でも安心</div>
+        <div style="background: #ffffff; color: #1c3d8f; border: 1px solid #1c3d8f; font-size: 12.5px; padding: 7px 20px; border-radius: 999px;">＃親へのサポート</div>
       </div>
     </div>
 
-    <!-- 口コミカード -->
-    <div style="padding: 0 70px 36px;">
+    <!-- 声カード -->
+    <div style="padding: 0 70px 14px;">
       <div style="max-width: 980px; margin: 0 auto; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px;">
 
-        <div class="rcard">
-          <div class="stars">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="#e0a83c"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"></path></svg>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="#e0a83c"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"></path></svg>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="#e0a83c"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"></path></svg>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="#e0a83c"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"></path></svg>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="#e0a83c"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"></path></svg>
-            <span class="mincho" style="color: #a8894a; font-size: 14px; margin-left: 6px;">5.0</span>
-          </div>
-          <p style="font-size: 13.5px; line-height: 1.95; margin: 0;">質問すると必ずその日のうちに解決してもらえた。先生が一人ひとりの性格まで分かってくれているので、安心して最後まで走り切れました。</p>
-          <div class="rmeta"><span>2026年卒・男子</span><span class="rtag">○○中学 進学</span></div>
+        <div class="vcard">
+          <div class="vhead">過去問は塾で完結。家庭は体調管理とメンタルケアに集中できました</div>
+          <p class="vbody">過去問題の進め方と、解けなかった問題を質問を通して習得していくシステムがある点。そのことによって、過去問題については家庭の負担は最低限で、その分子どもの体調管理やメンタルケアに充てることができたと考えています。</p>
+          <div class="vmeta"><span class="vtag">＃過去問対策</span><span class="vwho">31期生・保護者</span></div>
         </div>
 
-        <div class="rcard">
-          <div class="stars">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="#e0a83c"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"></path></svg>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="#e0a83c"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"></path></svg>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="#e0a83c"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"></path></svg>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="#e0a83c"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"></path></svg>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="#d8d2c0"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"></path></svg>
-            <span class="mincho" style="color: #a8894a; font-size: 14px; margin-left: 6px;">4.0</span>
-          </div>
-          <p style="font-size: 13.5px; line-height: 1.95; margin: 0;">少人数なので授業中に置いていかれることがない。宿題の量は多い時期もあったけれど、計画の立て方から教えてもらえたのが良かったです。</p>
-          <div class="rmeta"><span>2026年卒・女子</span><span class="rtag">私立中高一貫校 進学</span></div>
+        <div class="vcard">
+          <div class="vhead">少人数で、一人ひとりをよく見てもらえる</div>
+          <p class="vbody">少人数で一人一人よく見てもらえる。過去問など志望校対策も子供に合わせてくれる。</p>
+          <div class="vmeta"><span class="vtag">＃少人数制</span><span class="vwho">31期生・保護者（6年生から入塾）</span></div>
         </div>
 
-        <div class="rcard">
-          <div class="stars">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="#e0a83c"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"></path></svg>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="#e0a83c"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"></path></svg>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="#e0a83c"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"></path></svg>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="#e0a83c"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"></path></svg>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="#e0a83c"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"></path></svg>
-            <span class="mincho" style="color: #a8894a; font-size: 14px; margin-left: 6px;">5.0</span>
-          </div>
-          <p style="font-size: 13.5px; line-height: 1.95; margin: 0;">6年生まで同じ先生が見てくれるので、子どもの変化に合わせた声かけをしてもらえました。親の不安にも面談で丁寧に向き合ってくださいました。</p>
-          <div class="rmeta"><span>2025年卒・保護者</span><span class="rtag">○○中学 進学</span></div>
+        <div class="vcard">
+          <div class="vhead">性格まで含めて、子どもをしっかり見てくれる</div>
+          <p class="vbody">先生方が、子供（性格も含め）をしっかり見てくれているので、的確なアドバイスを受けることが出来たところが良かったです。先生方と子供が、ちゃんとコミュニケーションがとれる点をおすすめしたいです。</p>
+          <div class="vmeta"><span class="vtag">＃先生との距離</span><span class="vwho">31期生・保護者</span></div>
         </div>
 
-        <div class="rcard">
-          <div class="stars">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="#e0a83c"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"></path></svg>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="#e0a83c"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"></path></svg>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="#e0a83c"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"></path></svg>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="#e0a83c"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"></path></svg>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="#e0a83c"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"></path></svg>
-            <span class="mincho" style="color: #a8894a; font-size: 14px; margin-left: 6px;">5.0</span>
-          </div>
-          <p style="font-size: 13.5px; line-height: 1.95; margin: 0;">受験が終わった今でも、先生に会いに塾へ行きたくなります。合格だけでなく「勉強って面白い」と思えるようになったのが一番の収穫でした。</p>
-          <div class="rmeta"><span>2025年卒・女子</span><span class="rtag">○○中学 進学</span></div>
+        <div class="vcard">
+          <div class="vhead">小さい塾ですが、実績は本物です</div>
+          <p class="vbody">先生方は皆さんベテランで頼れる方ばかりです。塾長先生の人柄が素晴らしいので、安心して子供を預けられます。クラスの友達ととても仲がいいです。子供たちに対してとても愛情を持って接してくれて、優しい環境で精神的にとても強い受験生を育ててくれます。</p>
+          <div class="vmeta"><span class="vtag">＃先生との距離</span><span class="vwho">31期生・保護者</span></div>
         </div>
 
-        <div class="rcard">
-          <div class="stars">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="#e0a83c"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"></path></svg>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="#e0a83c"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"></path></svg>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="#e0a83c"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"></path></svg>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="#e0a83c"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"></path></svg>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="#d8d2c0"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"></path></svg>
-            <span class="mincho" style="color: #a8894a; font-size: 14px; margin-left: 6px;">4.0</span>
-          </div>
-          <p style="font-size: 13.5px; line-height: 1.95; margin: 0;">体調を崩した時に授業をライブ視聴できたので、遅れの不安がありませんでした。過去問対策は志望校に合わせて先生が組んでくれます。</p>
-          <div class="rmeta"><span>2024年卒・男子</span><span class="rtag">○○中学 進学</span></div>
+        <div class="vcard">
+          <div class="vhead">過去問の添削が丁寧。着実に力が伸びていくのを感じました</div>
+          <p class="vbody">先生と生徒の距離が近い。わからないことがあってもすぐに質問できる環境である。過去問の添削がとても丁寧で、記述の書き方や解法など細かい部分まで見ていただけたことに安心感がある。着実に力が伸びていくのを感じた。</p>
+          <div class="vmeta"><span class="vtag">＃過去問対策</span><span class="vwho">31期生・保護者（6年生から入塾）</span></div>
         </div>
 
-        <div class="rcard">
-          <div class="stars">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="#e0a83c"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"></path></svg>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="#e0a83c"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"></path></svg>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="#e0a83c"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"></path></svg>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="#e0a83c"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"></path></svg>
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="#e0a83c"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8L12 17.2 5.9 20.6l1.4-6.8L2.2 9.1l6.9-.8z"></path></svg>
-            <span class="mincho" style="color: #a8894a; font-size: 14px; margin-left: 6px;">5.0</span>
-          </div>
-          <p style="font-size: 13.5px; line-height: 1.95; margin: 0;">転塾で不安だらけでしたが、カリキュラムのズレを個別に調整してもらえて、すぐに追いつけました。もっと早く来ればよかったです。</p>
-          <div class="rmeta"><span>2024年卒・保護者</span><span class="rtag">私立中高一貫校 進学</span></div>
+        <div class="vcard">
+          <div class="vhead">成績だけでなく、努力を認めて肯定してくれる</div>
+          <p class="vbody">先生方が親身になって子供や保護者の話に耳を傾けていただけるところが良かったです。成績だけでなく努力しているところも認めてくれて、とにかく肯定していただけるところも良かったです。</p>
+          <div class="vmeta"><span class="vtag">＃親へのサポート</span><span class="vwho">31期生・保護者（6年生から入塾）</span></div>
         </div>
 
       </div>
     </div>
 
-    <!-- もっと見る -->
-    <div style="text-align: center;">
-      <div style="display: inline-block; background: #ffffff; border: 1px solid #1c3d8f; color: #1c3d8f; font-size: 13.5px; letter-spacing: 0.1em; padding: 14px 60px;">口コミをもっと見る（全42件）</div>
+    <!-- ロングレビュー -->
+    <div style="padding: 8px 70px 36px;">
+      <div style="max-width: 980px; margin: 0 auto;">
+        <div class="vcard" style="padding: 28px 34px;">
+          <div class="vhead">転塾組でも、すぐに馴染めました。子どもが「ここに通いたい！」と即決した塾です</div>
+          <p class="vbody">明倫館には、小学5年生の冬期講習から転塾という形でお世話になりました。入塾前は進路について不安がありましたが、先生方がとても親身になってくださり、不安を一つひとつ丁寧に取り除いてくださいました。その子に合った進学先を提案していただけたことも、本当に心強かったです。授業では、先生方が子ども一人ひとりに温かく接してくださり、体験授業の際にはクラスの皆さんが笑顔で迎えてくださり、子どもが「ここに通いたい！」と即決したほどです。他の塾では見過ごされがちな子ども同士の些細な言動にも目を配り、丁寧にご指導いただいたことには感動しました。明倫館は、学習面だけでなく、子どもの心の成長も大切にしてくださる、信頼できる塾です。本当に感謝の気持ちでいっぱいです。</p>
+          <div class="vmeta"><span class="vtag">＃転塾でも安心</span><span class="vtag">＃先生との距離</span><span class="vwho">31期生・保護者（小5冬に転塾）</span></div>
+        </div>
+      </div>
     </div>
+
+    <!-- 使い方のコツ -->
+    <div style="padding: 0 70px 30px;">
+      <div style="max-width: 980px; margin: 0 auto;">
+        <div style="text-align: center; margin-bottom: 22px;">
+          <div class="script" style="font-size: 24px;">Tips</div>
+          <h2 class="mincho" style="font-size: 24px; font-weight: 600; color: #a8894a; letter-spacing: 0.12em; margin: 2px 0 8px;">後輩パパママへ。先輩たちの「使い方のコツ」</h2>
+          <p style="font-size: 12.5px; color: #3f5566; margin: 0;">アンケートの最後に聞いた、明倫館の使いこなし術。こちらも原文のままお届けします。</p>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px 24px;">
+          <div class="tip"><div class="tip-text">自習室を使い倒す</div></div>
+          <div class="tip"><div class="tip-text">家にいても集中して勉強できない子は、とりあえず自習室に送り込む</div></div>
+          <div class="tip"><div class="tip-text">自信を失いそうになったり、不安な点があったら、親も子もすぐに面談をしに行く！</div></div>
+          <div class="tip"><div class="tip-text">遠慮せずに積極的に質問や相談をすることで、より充実したサポートを受けられると思います</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 注記 -->
+    <div style="text-align: center; font-size: 11.5px; color: #4a6a80; padding: 0 70px;">掲載内容は、当塾実施の卒業生保護者アンケートの回答を原文に基づき掲載しています（一部、読みやすさのため改行等を調整）。</div>
 
   </div>
 </div>
